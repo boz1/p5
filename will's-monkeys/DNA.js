@@ -2,7 +2,7 @@ class DNA {
 	constructor(target) {
 		this.target = target;
 		this.fitness = 0
-		this.genes = generate(this.target);
+		this.genes = generate(this.target); // Variation
 	}
 
 	evalFitness() {
@@ -15,7 +15,7 @@ class DNA {
 		this.fitness = matchCount / this.target.length
 	}
 
-	crossover(partner) {
+	crossover(partner) { // Heredity
 		let child = new DNA(this.target)
 		let threshold = floor(random(this.genes.length))
 		for (let i = 0; i < this.genes.length; ++i) {

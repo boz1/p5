@@ -16,7 +16,7 @@ class Population {
         }
     }
 
-    buildPool() {
+    buildPool() { // Selection
         this.pool = []
         let maxFitness = 0
 
