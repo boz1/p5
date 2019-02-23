@@ -33,7 +33,7 @@ function draw() {
 	translate(w, h)
 	rotate(-0.5 * PI);
 
-	stroke("#F8333C")
+	stroke("#692BA8")
 	arc(0, 0, 300, 300, 0, jumpSec);
 
 	stroke("#FCAB10")
@@ -43,7 +43,7 @@ function draw() {
 	arc(0, 0, 260, 260, 0, jumpHr);
 
 	push();
-	stroke("#F8333C")
+	stroke("#692BA8")
 	strokeWeight(4)
 	rotate(jumpSec)
 	line(0, 0, 100, 0)
